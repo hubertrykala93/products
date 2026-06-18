@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles (remote)
+
+   These apply when `products` runs STANDALONE (its own index.html on :4201).
+   When federated into the shell, this stylesheet is not loaded — the host
+   never loads a remote's index.html, only its exposed modules — so the shell's
+   global styles apply and there's no duplication. Importing @company/ui here
+   keeps the standalone dev experience consistent with the shell. */
+@use 'primeicons/primeicons.css';
+@use 'ui/styles/tokens' as *;
+@use 'ui/styles/reset' as *;
